@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+}
+@font-face{
+	font-family: "poppins-Black"
+	src:url(fonts/poppins-Black.tff);
+}
+@font-face{
+	font-family: "poppins-Bold"
+	src:url(fonts/poppins-Bold);
+}
+@font-face{
+	font-family: "poppins-ExtraLight"
+	src:url(fonts/poppins-ExtraLight.tff);
+}
+@font-face{
+	font-family: "poppins-Light"
+	src:url(fonts/poppins-Light.tff);
+}
+@font-face{
+	font-family: "poppins-Medium";
+	src:url(fonts/poppins-Medium.tff);
+}
+@font-face{
+	font-family: "poppins-Regular";
+	src:url(fonts/poppins-Regular.tff);
+}
+
+body {
+	
+    text-align: center;
+    font-family: "poppins-Light";
+    font-size: 18px;
+    color: hsl(257, 5%, 44%);
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: .2em;
+
+    color: black;
+    background: #80808075;
+   overflow: hidden;
+}
+@media only screen and (max-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+    
+}
+h1,h2,h3,h4,h5 {
+    font-weight: 1000;
+}
+
+
+
+
+form{
+	margin-top: 6em;
+	color: white;
+	margin-left: 2em;
+	font-size: 15px;
+}
+input{
+	margin-bottom: 3em;
+	width: 20em;
+	background-color: rgba(255,255,255,.6);
+	border:3px solid rgba(255,255,255,.6);
+	color: black;
+	text-align: center;
+}
+
+.trait{
+	border-bottom: 1px solid  #e6a5cd ;
+}
+button{
+	background-color: #e6a5cd;
+	width: 90%;
+	height: 4em;
+	border:2px solid #e6a5cd;
+	border-radius: 20px;
+
+}
+h3{
+	margin-top: 2em;
+	text-align: center;
+}
+.mini-cadre{
+
+	background-color: rgba(255,255,255,.4);
+	width: 25em;
+	margin-left: 150px;
+	border: 2px;
+	padding-top: 1em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5em;
+	overflow: hidden;
+	position: relative;
+
+}
+.title{
+	width: 80%;
+	height: 2.5em;
+	background-color: #e6a5cd;
+	margin-top: 1.5em;
+	position: center;
+	margin-left: 10%;
+	padding: 3px;
+	border: white;
+	border-radius: 10px;
+
+}
+.title h5{
+	color: black;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+}
+.ligne{
+	display: flex;
+	flex-direction: row;
+	margin-top: 2em;
+}
+
+.orange{
+	color:  #e6a5cd;
+}
+.rond1{
+	width: 20em;
+	height: 20em;
+	border-radius: 10em;
+	background-color:  #e6a5cd;
+	margin-left: 60em;
+	margin-top: -.2em;
+}
+.rond2{
+	width: 20em;
+	height: 20em;
+	border-radius: 10em;
+	background-color:  #05564e;
+	margin-top: -6em;
+	position: absolute;
+}
+.ensemble{
+	width: 100%
+	padding-bottom:3em;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}

@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+}
+@font-face{
+	font-family: "poppins-Black"
+	src:url(fonts/poppins-Black.tff);
+}
+@font-face{
+	font-family: "poppins-Bold"
+	src:url(fonts/poppins-Bold);
+}
+@font-face{
+	font-family: "poppins-ExtraLight"
+	src:url(fonts/poppins-ExtraLight.tff);
+}
+@font-face{
+	font-family: "poppins-Light"
+	src:url(fonts/poppins-Light.tff);
+}
+@font-face{
+	font-family: "poppins-Medium";
+	src:url(fonts/poppins-Medium.tff);
+}
+@font-face{
+	font-family: "poppins-Regular";
+	src:url(fonts/poppins-Regular.tff);
+}
+
+body {
+	
+    text-align: center;
+    font-family: "poppins-Light";
+    font-size: 18px;
+    color: hsl(257, 5%, 44%);
+    font-weight: 500;
+    margin: 0;
+   padding: 0;
+
+    color: black;
+    background: #0d0326;
+
+}
+@media only screen and (max-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+    
+}
+h1,h2,h3,h4,h5 {
+    font-weight: 1000;
+}
+/*====================================================================================*/
+@media only screen and (min-width: 1280px){
+	nav{
+	display: flex;
+	flex-direction: row;
+	width: 20%;
+	height: 4em;
+	background: white;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+	nav ul{
+		display: flex;
+		flex-direction: row;
+		width: 24em;
+		justify-content: space-between;
+		list-style: none;
+	}
+	nav ul li{
+		width: 9em;
+		height: 2em;
+		border-radius: 20px;
+		background: #0f0240eb;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 5px;
+	}
+	nav ul li a{
+		text-decoration:none;
+		color: white;
+	}
+	nav ul li a:hover{
+		color: grey;
+	}
+	section{
+		width: 100%;
+		padding-bottom: 2em;
+		display: flex;
+		flex-direction: row;
+	}
+	.menu{
+		width: 20%;
+		height: 30em;
+		background: white;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		transition: 3s;
+		overflow: hidden;
+
+	}
+	.menu ul{
+		list-style: none;
+	}
+	.menu ul li{
+		width: 100%;
+		padding-bottom: 1em;
+		text-align: center;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		font-size: 20px;
+	}
+	.active {
+		width: 80%;
+		height: 3em;
+		background:  #0d0326;
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+	}
+	.menu .active a{
+		color: white;
+	}
+
+
+	.menu ul li :hover{
+		width: 100%;
+		height: 4em;
+		background:  #0d0326;
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.essaie{
+		
+	}
+	.menu ul li a {
+		text-decoration: none;
+		color: black;
+	}
+
+	 .menu ul li:hover .menu ul li a:not(:hover)>
+	.active
+	{
+		margin-bottom: 9px;
+	}
+	.texte{
+		width: 100%;
+		padding-bottom: 2em;
+		background: rgba(255,255,255,.7);
+		
+		padding-top: 3em;
+		color: black;
+		margin-top: 3px;
+	}
+	.texte p
+	{
+		margin-top: 2em;
+		margin-bottom: 2em;
+
+	}
+	.texte h3{
+		margin-bottom: 1em;
+		margin-top: 1em;
+		font-size: 26px;
+		color:  #020221;
+	}
+	footer{
+		width: 100%;
+		height: 14em;
+		background:#080119;
+		padding-top: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.ensemble{
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 22px;
+	}
+	.ensemble a{
+		text-decoration: none;
+		color: white;
+		margin-bottom: 2em;
+		margin-top: 2em;
+	}
+
+
+
+	.slide{
+		width: 100%;
+		padding-bottom: 2em;
+		margin-bottom: 1em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
+		
+		.grandcadre{
+			width: 70%;
+			padding-bottom: 3em;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-bottom: 2em;
+		
+			margin-left: 18em;
+			margin-top: 2em;
+			
+		}
+
+		.sousgrandcadre{
+			width: 13.1em;
+			height: 20em;
+			background: #060217;
+			transition: 1s;
+		}
+		.sousgrandcadre:hover{
+			transform: scale(.9);
+			box-shadow: 2px 2px 2px 2px grey;
+		}
+		.cadre{
+			width: 13em;
+			height: 18em;
+			border:1px solid black;
+			position: relative;
+
+		}
+		.cadrebackground{
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			left: 0;top: 0;right: 0;bottom: 0;
+			position: absolute;
+		}
+		.cadretext{
+			position: absolute;
+			color: white;
+		}
+		.cadretext .fa:hover{
+			color: red;
+		}
+}
+	
